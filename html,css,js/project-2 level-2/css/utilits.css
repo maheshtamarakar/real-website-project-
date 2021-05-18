@@ -1,0 +1,45 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+:root {
+    --main-bg-color:rgba(168, 111, 5, 0.774);
+    --font1: 'Ubuntu', sans-serif;
+    --font2:'Roboto', sans-serif;
+    
+}
+.max-width-1{
+    max-width: 80vw;
+    
+}
+
+.max-width-2{
+    max-width: 60vw;
+
+}
+.m-auto{
+    margin: auto;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 11px;
+    margin: 0 6px;
+    font-family: var(--font2);
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all 0.3s ease-in-out;
+    background-color:var(--main-bg-color) ;
+    color: white;
+
+}
+.my-2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.font-1{
+    font-family: var(--font1);
+}
+.font-2{
+    font-family: var(--font2);
+}

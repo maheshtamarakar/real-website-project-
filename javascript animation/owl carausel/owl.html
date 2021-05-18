@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/owl.css">
+    <title>owl carousel</title>
+</head>
+<body>
+    <div class="slider">
+        <span class="arrow">&#139;</span>
+        <span class="arrow">&#155;</span>
+        <div class="slides">
+            <div class="slide">
+                <img src="img/post-1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/post-7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        var arrow = document.getElementsByClassName('arrow');
+        var slide = document.getElementsByClassName('slide');
+        var l=0;
+        arrow[1].onclick = ()=>{
+            l++;
+            for(var i of slide){
+            if(l==0){i.style.left = '0';}
+            if(l==1){i.style.left = '-1040px';}
+            if(l>1){l=1;}
+            }
+        }    
+        arrow[0].onclick = ()=>{
+            l--;
+            for(var i of slide){
+            if(l==0){i.style.left = '0';}
+            if(l==1){i.style.left = '1040px';}
+            if(l<0){l=0;}
+            }
+        }    
+    </script>
+</body>
+</html>

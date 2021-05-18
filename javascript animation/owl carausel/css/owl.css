@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    width: 100%;
+    /* height: 500px; */
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+.slides{
+    width: 90%;
+    overflow-x: auto;
+    display: flex;
+    background-color: black;
+    margin: 0 auto;
+}
+.slide {
+    width: 300px;
+    height: 300px;
+    margin: 23px;
+    transition: 0.5s all ease-in-out;
+    position:relative;
+
+}
+.slide img{
+    width: 300px;
+    height: 300px;
+    transition: 0.5s all ease-in-out;
+
+}
+.arrow{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    z-index: 1;
+    font-size: 165px;
+    color: green;
+    cursor: pointer;
+
+}
+.arrow:nth-of-type(2){
+    left: 94%;
+}
+.slides::-webkit-scrollbar{
+    visibility: hidden;
+    
+
+}

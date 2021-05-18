@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation section */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-left{
+    display: flex;
+    /* font-size: 21px; */
+    
+}
+.nav-left span img{
+    width:47px;
+}
+.nav-left ul{
+    padding-top: 14px;
+    font-weight: bolder;
+    display: flex;
+    list-style: none;
+    margin: 0 71px;
+    font-size: 19px;
+
+}
+.nav-left ul li a{ 
+    text-decoration: none;
+    color: black;
+    margin: 0 7px;
+    font-family: var(--font1);
+
+}
+.nav-left ul li a:hover{ 
+   
+    color: var(--main-bg-color);
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.form-input{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 11px;
+    margin: 0 6px;
+    font-family: var(--font2);
+}
+
+
+
+/* content section */
+.container{
+    height: 100%;
+display: flex;
+
+position: relative;
+/* background-color: blueviolet; */
+}
+.container::before{
+
+    content: "";
+    background: url('../img/11.svg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.18;
+    z-index: -1;
+}
+.right-container img{
+    border: 2px solid black;
+    border-radius: 118px;
+    height: 219px;
+}
+.right-container {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container {
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    padding: 23px;
+    flex-direction: column;
+    font-family: var(--font2);
+    /* height: 219px; */
+}
+.left-container h1{
+    margin: 15px 0;
+ 
+}
+.home-articles{
+    position: relative;
+    margin-top: 23px;
+    padding: 14px;
+    background-color: rgba(230, 248, 230, 0.5);
+    font-family: var(--font2);
+}
+.home-article{
+    display: flex;
+    margin: 34px;
+
+}
+.home-article-img img{
+    height: 155px;
+    
+}
+.home-article-content{
+    font-size: 11px;
+    align-self: center;
+    margin: 24px;
+
+}
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+
+
+}
+.year-article{
+    position: absolute;
+    top: 79px;
+    right: 23px;
+}
+.year-article div{
+    margin: 6px 0; 
+}
+
+/* footer section */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--main-bg-color);
+
+height: 52px;
+
+}
+.footer a{
+    color: white;
+}
